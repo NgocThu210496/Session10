@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai6</title>
+
+</head>
+
+<body>
+    <script>
+//Nhập vào 3 cạnh của một tam giác, in ra kết quả 3 cạnh đó có phải là tam giác, cân, vuông, vuông cân, đều
+        let a=Number(prompt("nhap vao canh a: "));
+        let b=Number(prompt("nhap vao canh b: "));
+        let c=Number(prompt("nhap vao canh c: "));
+
+        if ((a>=b+c)||(b>=c+a)||(c>=a+b)) {
+             document.write("Ba canh tren khong phai la mot tam giac");
+        }else if ((a=b)||(b=c)||(c=a)){
+            document.write("Tam giac tren la tam giac can");
+        }else if (a=b=c){
+            document.write("Tam giac tren la tam giac deu_");
+        }else if ((a*a==b*b+c*c)||(b*b==c*c+a*a)||(c*c==a*a+b*b)){
+            document.write("tam giac tren la tam giac vuong");
+        }else{
+            document.write("Ba canh tren la mot tam giac");
+        }
+    </script> 
+</body>
+
+</html>

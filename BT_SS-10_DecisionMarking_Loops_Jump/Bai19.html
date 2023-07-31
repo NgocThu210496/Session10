@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai19</title>
+
+</head>
+
+<body>
+    <script>
+
+     for(var i=100;i<=999;i++){
+      var hangTram=Math.floor(i/100);
+      var hangChuc=Math.floor(i%100/10);
+      //var donVi=i-(hangTram*100)-(hangChuc*10);
+      var donVi=Math.floor(i%100%10);//giong tren
+
+      var sum=Math.pow(hangTram,3)+Math.pow(hangChuc,3)+Math.pow(donVi,3);
+        if(sum==i){
+          console.log(i+ " la so Amstrong");
+        }
+     }
+     </script>
+</body>
+
+</html>

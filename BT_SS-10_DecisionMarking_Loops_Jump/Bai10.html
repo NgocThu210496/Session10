@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai10</title>
+
+</head>
+
+<body>
+    <script>
+        //Nhập vào một số nguyên n, kiểm tra số n có phải là số nguyên tố hay không
+
+        var n = Number(prompt("Nhap vao so nguyen n: "));
+
+        if (n < 2) {
+            console.log(n + " khong phai la so nguyen to");
+        }
+        else if (n == 2) {
+            console.log(n + "  la so nguyen to");
+        } 
+        for (var i = 2; i <= (n - 1); i++) {
+
+            if (n % i == 0) {
+                console.log(n + " khong phai la so nguyen to");
+            } else {
+                console.log(n + "  la so nguyen to");
+            }
+            break;
+        }
+
+    </script>
+</body>
+
+</html>

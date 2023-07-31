@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai5</title>
+
+</head>
+
+<body>
+    <script>
+//Nhập vào điểm HTML, CSS, Javascript của học viên Rikkei Academy
+//từ bàn phím. Tính điểm trung bình và xếp loại học viên.
+
+        let scoreHtml= Number(prompt("Nhap vao so diem mon HTML: "));
+        let scoreCss=Number(prompt("Nhap vao so diem mon CSS: "));
+        let scoreJavascript=Number(prompt("Nhap vao so diem mon Javascript: "));
+
+        scoreaVerage=(scoreHtml+scoreCss+scoreJavascript)/3;
+        scoreaVerage=(scoreaVerage.toFixed(2));
+        console.log("lam tron so", typeof Number (scoreaVerage),Number (scoreaVerage));// ep tu kieu string ve kieu so
+
+
+        if(Number (scoreaVerage)<5){
+            document.write( "Diem trung binh cua ban: " + Number (scoreaVerage) + " => Xep loai Yeu " );
+        }else if(Number (scoreaVerage)<6){
+            document.write( "Diem trung binh cua ban: " + Number (scoreaVerage) + " => Xep loai Kem " );
+        }else if(Number (scoreaVerage)<7){
+            document.write( "Diem trung binh cua ban: " + Number (scoreaVerage) + " => Xep loai Trung binh " );
+        }else if(Number (scoreaVerage)<8){
+            document.write( "Diem trung binh cua ban: " + Number (scoreaVerage) + "  => Xep loai Kha " );
+        }else if (Number (scoreaVerage)<9){
+            document.write( "Diem trung binh cua ban: " + Number (scoreaVerage) + "  => Xep loai Gioi " );
+        }else{
+            document.write ("Diem trung binh cua ban: " + Number (scoreaVerage) + "  => Xep loai Xuat sac");
+        }
+
+
+    </script>
+</body>
+
+</html>

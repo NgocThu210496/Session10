@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai11</title>
+
+</head>
+
+<body>
+    <script>
+        //Nhập vào một số nguyên n, kiểm tra số n có phải là hoàn hảo hay không
+        // Bước 1: Nhập vào n
+        // Bước 2: Tính tổng S các số mà n chia hết trong khoảng [1..n-1]
+        // Bước 3: Nếu S = n, số n là số hoàn thiện
+        let n=Number(prompt("Nhap vao so n: "));
+        let sum=0;
+        
+        for(var i=1;i<=n/2;i++){ //-Kiểm tra tới number / 2 thôi,vì ước số lớn nhất của 1 số k vượt quá 1 nửa rồi.
+            if(n%i==0){
+                sum=sum+i;// Sum += i;
+            }break;
+        }
+         if(sum==n){
+                console.log("Số " +  n + " là số hoàn thiện");
+            }else{
+                console.log("Số " +  n + " khong phai là số hoàn thiện");
+            }
+        
+
+    </script>
+</body>
+
+</html>

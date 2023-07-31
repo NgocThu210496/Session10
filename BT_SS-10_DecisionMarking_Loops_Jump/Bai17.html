@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai17</title>
+
+</head>
+
+<body>
+    <script>
+      //Nhập vào 3 số từ bàn phím, sắp xếp theo thứ tự giảm dần và in ra
+      let number1=Number(prompt("nhap vao so "));
+      let number2=Number(prompt("nhap vao so "));
+      let number3=Number(prompt("nhap vao so "));
+      
+      max=number1;
+      min=number1;
+      //so tang dan
+       // chuyển số bé nhất vào a
+      if((number1>number2)){
+        max=number1;
+        number1=number2;
+        number2=max;
+      }else if(number1>number3){
+        max=number1;
+        number1=number3;
+        number3=max;
+
+      //// chuyển số bé nhì vào b
+      }else if(number2>number3){
+        max=number2;
+        number2=number3;
+        number3=max;
+      }
+      //so giam dan
+      else if((number1<number2)){
+        min=number1;
+        number1=number2;
+        number2=min;
+      }
+      else if((number1<number3)){
+        min=number1;
+        number1=number3;
+        number3=min;
+      } else if((number2<number3)){
+        min=number2;
+        number2=number3;
+        number3=min;
+      }
+
+    console.log("so tang dan " +  number1,number2,number3);
+    console.log("so giam dan " +  number3,number2,number1);
+     </script>
+</body>
+
+</html>

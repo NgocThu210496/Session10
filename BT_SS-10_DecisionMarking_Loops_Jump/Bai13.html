@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai13</title>
+
+</head>
+
+<body>
+    <script>
+        // Nhập n số nguyên dương và tính tổng các số đó. Chương trình kết thúc khi nhập vào 1 số nguyên âm
+
+        sum = 0;
+        while (true) {
+            let number = Number(prompt("Nhap vao so nguyen duong"));
+            if (number < 0 || number == "") {
+                break;
+            } else {
+                sum += number;
+            }
+        } console.log(sum);
+    </script>
+</body>
+
+</html>

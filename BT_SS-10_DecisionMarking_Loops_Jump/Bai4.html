@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai4</title>
+
+</head>
+
+<body>
+    <script>
+//Nhập vào 2 số nguyên và phép tính (+,-,*,/), in ra kết quả của phép
+//tính với 2 số nguyên đó
+        let number1=parseInt(prompt("Nhap vao number1 "));
+        let number2=parseInt(prompt("Nhap vao number2 "));
+        let inputMath=prompt("Phep tinh thuc hien la(+, -, *, /)");
+        
+         sum=number1+number2;
+         subtrac=number1-number2;
+         multipli=number1*number2;
+         divi=number1/number2;
+
+//su dung if..else
+        // if(inputMath=="+"){
+        //     document.write(number1 + " + " + number2 + " = " +sum);
+        // }else if(inputMath=="-"){
+        //     document.write(number1 + " - " + number2 + " = " +subtrac);
+        // }else if(inputMath=="*"){
+        //     document.write(number1 + " * " + number2 + " = " +multipli);
+        // }else{
+        //     document.write(number1 + " / " + number2 + " = " +divi);
+        // }
+
+// su dung switch..case
+        switch(inputMath){
+            case "+":
+                document.write(number1 + " + " + number2 + " = " +sum);
+                break;
+            case "-":
+                document.write(number1 + " - " + number2 + " = " +subtrac);
+                break;
+            case "*":
+                document.write(number1 + " * " + number2 + " = " +multipli);
+                break;
+            case "/":
+                document.write(number1 + " / " + number2 + " = " +divi);
+                break;
+            default:
+                break;
+        }
+        
+    </script> 
+</body>
+
+</html>

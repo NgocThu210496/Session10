@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai21</title>
+
+</head>
+
+<body>
+    <script>
+     let nhienLieu=Number(prompt("Nhap vao nhien lieu"));
+     let soPhiHanhGia=Number(prompt("Nhap vao so phi hanh gia"));
+     let doCaoDatToi=Number(prompt("Nhap vao do cao"));
+
+     // a. Chỉ chấp nhận nhiên liệu của tàu con thoi trong khoảng 5000 đến 3000
+    if(nhienLieu>=5000&&nhienLieu<=30000){
+      console.log("nhan nhien lieu",nhienLieu);
+    }else {
+      console.log(" khong nhan nhien lieu",nhienLieu);
+    }
+    //b. Chỉ chấp nhận số phi hành gia từ 1-7
+    if(soPhiHanhGia>=1&&soPhiHanhGia<=7){
+      console.log("chấp nhận số phi hành gia",soPhiHanhGia);
+    }else{
+      onsole.log("khong chấp nhận số phi hành gia",soPhiHanhGia);
+    }
+    //c. Inrasốnhiênliệucònlạivàđộcaotốiđamàtàuconthoicó
+//thể đạt được biết rằng mỗi lần đốt nhiên liệu thì tàu con thoi bay cao thêm được 50km 
+//(mỗi lần đốt cần 100 nhiên liệu/1 phi hành gia)
+
+        // doCaoDatToi = 1000km
+        // => 1000/50 = 20 lan dot
+        // => 100 * soPhiHanhGia
+        // => 100 * soPhiHanhGia * 20 = so nhien lieu can
+        // => nhien lieu con lai = nhienLieu - so nhien lieu can
+        console.log("Nhien lieu con lai: ", nhienLieu - 2 * soPhiHanhGia * doCaoDatToi);
+
+        // doCaoDatToi = x
+        // => lan dot
+        // => 100 * soPhiHanhGia
+        // => 100 * soPhiHanhGia * x/50 =  so nhien lieu can
+        // => 0 = nhienLieu - so nhien lieu can => nhienLieu = so nhien lieu can
+        // => 100 * soPhiHanhGia * x/50 = nhienLieu
+        // => 2 * x * soPhiHanhGia = nhienLieu
+        // => x = nhienLieu/(soPhiHanhGia*2)
+        console.log("Do cao toi da: ", nhienLieu / (soPhiHanhGia * 2) + " km");
+    
+
+
+     </script>
+</body>
+
+</html>

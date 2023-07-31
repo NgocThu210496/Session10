@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai15</title>
+
+</head>
+
+<body>
+    <script>
+     // Nhập vào số tiền gửi ngân hàng ban đầu, lãi suất năm, số tháng gửi. 
+     //Tính số tiền lãi và tiền nhận được sau thời gian gửi biết tính lãi theo
+    //lãi nhập gốc
+    let tiengoc = +prompt("Nhap so")
+    let month = 1;
+    let lai =(1/100) ;
+    for(month = 1;month <= 12; month++){
+        tiengoc = tiengoc + tiengoc * lai;
+        console.log("Lai tien", month, tien);
+    }
+     </script>
+</body>
+
+</html>

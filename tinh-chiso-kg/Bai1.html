@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+
+</head>
+
+<body>
+    <script>
+        var weight = Number(prompt("nhap can nang cua ban: "));
+        var height = Number(prompt("nhap chieu cao cua ban"));
+        var bmi = weight/(Math.pow (height,2)); //ham tinh mu 
+         bmi=(bmi.toFixed(2));
+         
+        if (bmi<18) {
+            document.write(" Ti so  bmi cua ban la ",bmi + " underweight"); //thieu can
+        } else if (bmi<25.0) {
+            document.write("Ti so  bmi cua ban la  ",bmi + " nomal");//binh thuong
+        }
+        else if (bmi<30.0) {
+            document.write_("Ti so  bmi cua ban la  ",bmi + " overweight");//thua can
+        }
+        else {
+            document.write("Ti so  bmi cua ban la  ",bmi + " obese");//beo
+        }
+    </script>
+</body>
+
+</html>
